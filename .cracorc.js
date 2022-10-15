@@ -3,6 +3,7 @@ const CracoLessPlugin = require("craco-less");
 const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
 const SimpleProgressWebpackPlugin = require("simple-progress-webpack-plugin");
 const webpack = require("webpack");
+const { whenProd } = require("@craco/craco");
 const path = require("path");
 const pathResolve = (pathUrl) => path.join(__dirname, pathUrl);
 module.exports = {
@@ -27,10 +28,15 @@ module.exports = {
     },
     plugins: [
       //打包分析
-      new BundleAnalyzerPlugin({
-        analyzerPort: 1000,
-        openAnalyzer: false,
-      }),
+      ...whenProd(
+        () => [
+          new BundleAnalyzerPlugin({
+            analyzerPort: 1000,
+            openAnalyzer: false,
+          }),
+        ],
+        []
+      ),
       new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
       new SimpleProgressWebpackPlugin(),
     ],

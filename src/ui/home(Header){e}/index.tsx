@@ -10,7 +10,7 @@ export default function HOME() {
           <Card
             title="基于文件路径的路由系统"
             bordered={true}
-            style={{ width: 300 }}
+            // style={{ width: 300 }}
             hoverable
           >
             <h1>路由主页</h1>
@@ -31,7 +31,7 @@ export default function HOME() {
           <Card
             title="xstate ddd 示例"
             bordered={true}
-            style={{ width: 300 }}
+            // style={{ width: 300 }}
             hoverable
           >
             <Link to="/home/cookieshop">xstate 测试</Link>
