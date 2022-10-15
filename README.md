@@ -2,7 +2,7 @@
 
 ## 体验地址
 
-[生成的示例测试](https://dapper-pithivier-81723a.netlify.app)
+[Code Sandbox](https://codesandbox.io/p/github/foolishandi/front-ddd-xstate-ts/draft/blissful-drake)
 
 ## 模板包括
 
