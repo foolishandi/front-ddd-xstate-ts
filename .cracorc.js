@@ -27,10 +27,10 @@ module.exports = {
     },
     plugins: [
       //打包分析
-      new BundleAnalyzerPlugin({
-        analyzerPort: 1000,
-        openAnalyzer: false,
-      }),
+      // new BundleAnalyzerPlugin({
+      //   analyzerPort: 1000,
+      //   openAnalyzer: false,
+      // }),
       new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
       new SimpleProgressWebpackPlugin(),
     ],
