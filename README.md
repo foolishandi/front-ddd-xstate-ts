@@ -2,7 +2,7 @@
 
 ## 体验地址
 
-[Code Sandbox](https://codesandbox.io/p/github/foolishandi/front-ddd-xstate-ts/draft/blissful-drake)
+[Code Sandbox](https://codesandbox.io/p/github/foolishandi/front-ddd-xstate-ts/main)
 
 ## 模板包括
 
