@@ -1,6 +1,4 @@
-// import { useMachine } from "@xstate/react";
-// import { Button } from "antd";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import shopMachine from "../../../services/machineFactory/ShopMachine";
 import { atomWithMachine } from "jotai/xstate";
 import { useAtom } from "jotai";

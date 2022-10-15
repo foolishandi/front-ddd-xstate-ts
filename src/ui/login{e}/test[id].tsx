@@ -1,5 +1,4 @@
-import React from "react";
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 import LoginBar from "./components/LoginBar";
 
 export default function Test(props: any) {
