@@ -1,46 +1,38 @@
-# Getting Started with Create React App
+# Frontend ddd xstate 架构模板
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 体验地址
 
-## Available Scripts
+[初步示例测试]()
 
-In the project directory, you can run:
+## 模板包括
 
-### `npm start`
+> 1.基于官方 create-react-app@4 ts 模板制作，利用 craco 配置 webpack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+> 2.基于文件路径的路由系统实现，无需写路由文件，无需安装插件，也可以自己更改，可以非常方便改成正常的 react-router-rom 路由
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```javascript
+    路由组件(文件夹文件均可)
+    **路径:`src/ui/home(Header){e}[id]`  生成路由:`/home/:id`**
+    解释:(Header):会被Header高阶组件包裹；{e}:精确匹配路径；[id]：生成动态路由
+    注意:1)生成的路由会全部小写
+         2)(){}[]有顺序要求，()可以添加多个
+         3)如果文件夹内有子路由，则文件夹需要加上{e}
+         4)默认自动生成路由的主文件夹可以更改
 
-### `npm test`
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> 3.初步按照 DDD 领域驱动设计，利用有限状态机 Xstate 库实现
 
-### `npm run build`
+> 4.利用 jotai 状态管理全局共享状态
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 目前进度:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-[x] 初始化
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-[x] 示例选择
 
-### `npm run eject`
+-[x] xstate 有限状态机接入【打开示例后，需点击 xstate ddd 示例，把左侧浮动按钮拉开】
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+-[] 基于文件路径的路由系统
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+-[] ddd 示例
