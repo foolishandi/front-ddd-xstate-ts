@@ -24,6 +24,7 @@ function App() {
             {routerHandle(routers)}
             <Route path="/" exact render={() => <Redirect to="/home" />} />
             <Route path="*" exact render={() => <Redirect to="/err" />} />
+            <div>2</div>
           </Switch>
         </Suspense>
       </div>
