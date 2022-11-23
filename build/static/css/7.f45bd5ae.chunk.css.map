@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/ui/test/index.module.less"],"names":[],"mappings":"AAAA,oBAEE,kBAEF,CAJA,sDAKI,aAEJ,CAPA,0CAQI,UAEJ","file":"7.f45bd5ae.chunk.css","sourcesContent":[".test3 {\n  margin: 0 30px;\n  margin-top: 30px;\n  /* 组件内元素更改样式 */\n  .ant-card-head-title {\n    color: rosybrown;\n  }\n  .ant-btn {\n    color: pink;\n  }\n}\n\n"]}
